@@ -1,0 +1,118 @@
+:root {
+  --color-bg: var(--figma-color-bg);
+  --color-bg-hover: var(--figma-color-bg-hover);
+  --color-bg-active: var(--figma-color-bg-pressed);
+  --color-border: var(--figma-color-border);
+  --color-border-focus: var(--figma-color-border-selected);
+  --color-icon: var(--figma-color-icon);
+  --color-text: var(--figma-color-text);
+  --color-bg-brand: var(--figma-color-bg-brand);
+  --color-bg-brand-hover: var(--figma-color-bg-brand-hover);
+  --color-bg-brand-active: var(--figma-color-bg-brand-pressed);
+  --color-border-brand: var(--figma-color-border-brand);
+  --color-border-brand-focus: var(--figma-color-border-selected-strong);
+  --color-text-brand: var(--figma-color-text-onbrand);
+  --gap: 4px;
+}
+
+/* THEME */
+/* .figma-light body { background: #eee; }
+.figma-light body { background: var(--figma-color-bg)}
+.figma-dark  body { background: #111; } */
+
+/* .figma-light button { background-color: #f0f0f0; }
+.figma-dark  button { background-color: #3a3a3a; }
+
+.figma-light button:hover { background-color: #ddd; }
+.figma-dark  button:hover { background-color: #555; } */
+
+.figma-dark .btn { border-color: #555; }
+.figma-light .btn { border-color: #e6e6e6; }
+
+.figma-dark .section-divider { background-color: rgba(0, 0, 0, 0.3)}
+.figma-light .section-divider { background-color: rgba(0, 0, 0, 0.05)}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--figma-color-text);
+  background: var(--figma-color-border);
+  background: var(--figma-color-bg);
+}
+
+/* Hide scroll bar visually */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: var(--figma-color-bg-brand)
+}
+
+.hidden {
+  display: none;
+}
+
+.divider {
+  border-top: 1px solid var(--figma-color-border);
+  /* margin: 3px 0; */
+}
+
+.btn {
+  margin: 0;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 12px;
+
+  background-color: var(--figma-color-bg);
+  color: var(--figma-color-text);
+  border: 1px solid var(--figma-color-text);
+  
+  &:hover {
+    color: var(--figma-color-text);
+    background-color: var(--figma-color-bg-secondary);
+  }
+}
+
+.btn--primary { 
+  border-width: 0px;
+  height: 32px;
+  background-color: var(--figma-color-bg-brand);
+  color: var(--figma-color-text-onbrand);
+  border-color: var(--figma-color-bg-brand);
+
+  &:hover {
+    background-color: var(--figma-color-bg-brand-hover);
+    color: var(--figma-color-text-onbrand);
+  }
+}
+
+.btn.active {
+  color: var(--figma-color-text);
+  color: #fff;
+  background-color: var(--figma-color-bg-brand);
+}
+
+.grid {
+  display: grid;
+  gap: 4px;
+}
+
+.grid-col-1 { grid-template-columns: 1fr; }
+.grid-col-2 { grid-template-columns: 1fr 1fr; }
+.grid-col-3 { grid-template-columns: 1fr 1fr 1fr; }
+.grid-col-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+.grid-col-5 { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+.grid-col-6 { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.flex-jc-sb { justify-content: space-between; }
+.flex-ai-center { align-items: center; }
+.flex-wrap {flex-wrap: wrap;}
