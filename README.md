@@ -1,4 +1,4 @@
-# Image Reset
+# Reset Image
 
-Figma plugin to reset image.
+Figma plugin to reset image size and effects.
 

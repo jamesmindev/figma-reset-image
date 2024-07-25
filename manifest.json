@@ -13,7 +13,7 @@
   "ui": "dist/index.html",
   "networkAccess": {
     "allowedDomains": [
-      "none"
+      "https://jamesmin.net"
     ]
   }
 }
